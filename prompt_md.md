@@ -1,5 +1,3 @@
-# PROMPT 1
-
 # Physics Notebook Writer (Markdown Only)
 
 Paste the following instructions into ChatGPT before solving problems.
