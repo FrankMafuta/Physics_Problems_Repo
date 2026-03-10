@@ -1,3 +1,225 @@
+Task 01 – Vectors and Linear Transformations
+ 
+Problem Statement
+ 
+Given the vectors  
+$\vec a = (2,-1,3)$ and $\vec b = (1,4,-2)$, compute magnitudes, normalized vectors, dot and cross products, and the angle between them.  
+For the matrix
+ 
+$$
+A =
+\begin{pmatrix}
+2 & 1 & 0 \\
+0 & 1 & -1 \\
+1 & 0 & 1
+\end{pmatrix}
+$$
+ 
+compute $A\vec a$, $\det A$, and determine whether the transformation preserves orientation.
+ 
+Theory
+ 
+For a vector $\vec v = (v1,v2,v3)$:
+ 
+• Magnitude: $|\vec v| = \sqrt{v1^2+v2^2+v3^2}$
+• Normalized vector: $\hat v = \vec v / |\vec v|$
+• Dot product:
+ 
+  $$
+  \vec a\cdot\vec b = a1 b1 + a2 b2 + a3 b3
+  $$
+• Angle:
+ 
+  $$
+  \cos\theta = \frac{\vec a\cdot\vec b}{|\vec a||\vec b|}
+  $$
+• Cross product:
+ 
+  $$
+  \vec a\times\vec b =
+  \begin{pmatrix}
+  a2 b3 - a3 b2 \\
+  a3 b1 - a1 b3 \\
+  a1 b2 - a2 b1
+  \end{pmatrix}
+  $$
+• Parallelogram area: $|\vec a\times\vec b|$
+• Orientation preserved if $\det A > 0$
+ 
+Step-by-Step Solution
+Vector magnitudes
+ 
+$$
+|\vec a| = \sqrt{2^2 + (-1)^2 + 3^2}
+$$
+ 
+$$
+|\vec a| = \sqrt{4 + 1 + 9}
+$$
+ 
+$$
+|\vec a| = \sqrt{14}
+$$
+ 
+$$
+|\vec b| = \sqrt{1^2 + 4^2 + (-2)^2}
+$$
+ 
+$$
+|\vec b| = \sqrt{1 + 16 + 4}
+$$
+ 
+$$
+|\vec b| = \sqrt{21}
+$$
+ 
+Normalized vector
+ 
+$$
+\hat a = \frac{1}{\sqrt{14}}(2,-1,3)
+$$
+ 
+Dot product
+ 
+$$
+\vec a\cdot\vec b = 2\cdot 1 + (-1)\cdot 4 + 3\cdot(-2)
+$$
+ 
+$$
+\vec a\cdot\vec b = -8
+$$
+ 
+Angle between vectors
+ 
+$$
+\cos\theta = \frac{-8}{\sqrt{14}\sqrt{21}}
+$$
+ 
+Cross product
+ 
+$$
+\vec a\times\vec b =
+\begin{pmatrix}
+2 - 12 \\
+3 + 4 \\
+8 + 1
+\end{pmatrix}
+$$
+ 
+$$
+\vec a\times\vec b = (-10,7,9)
+$$
+ 
+Area:
+ 
+$$
+|\vec a\times\vec b| = \sqrt{230}
+$$
+ 
+Matrix–vector multiplication
+ 
+$$
+A\vec a = (3,-4,5)
+$$
+ 
+Determinant
+ 
+Expanding:
+ 
+$$
+\det A = 1
+$$
+ 
+Since $\det A>0$, orientation is preserved.
+ 
+Final Result
+• $|\vec a|=\sqrt{14}$  
+• $|\vec b|=\sqrt{21}$  
+• $\hat a = \frac{1}{\sqrt{14}}(2,-1,3)$  
+• $\vec a\cdot\vec b=-8$  
+• $\vec a\times\vec b=(-10,7,9)$  
+• Area $=\sqrt{230}$  
+• $A\vec a=(3,-4,5)$  
+• $\det A = 1 > 0$
+ 
+Interpretation
+ 
+The vectors enclose an obtuse angle (negative dot product).  
+The cross product describes the oriented area.  
+The transformation preserves orientation.
+ 
+Task 02 – Parametric Trajectory, Velocity, and Acceleration
+Problem Statement
+ 
+Given:
+ 
+$$
+\vec r(t) = (t^2,\sin t,5)
+$$
+ 
+Compute velocity, acceleration, $|\vec v(1)|$, dot and cross product of $\vec v$ and $\vec a$.
+ 
+Theory
+• Velocity: $\vec v = d\vec r/dt$
+• Acceleration: $\vec a = d^2\vec r/dt^2$
+ 
+Step-by-Step Solution
+Velocity
+ 
+$$
+\vec v(t) = (2t,\cos t,0)
+$$
+ 
+Acceleration
+ 
+$$
+\vec a(t) = (2,-\sin t,0)
+$$
+ 
+Speed at \( t=1 \)
+ 
+$$
+|\vec v(1)| = \sqrt{4+\cos^2 1}
+$$
+ 
+Dot product
+ 
+$$
+\vec v\cdot\vec a = 4t - \cos t\sin t
+$$
+ 
+Cross product
+ 
+$$
+\vec v\times\vec a = (0,0,-2t\sin t -2\cos t)
+$$
+ 
+Final Result
+• $\vec v(t)=(2t,\cos t,0)$  
+• $\vec a(t)=(2,-\sin t,0)$  
+• $|\vec v(1)|=\sqrt{4+\cos^2 1}$  
+• $\vec v\cdot\vec a=4t-\cos t\sin t$  
+• $\vec v\times\vec a=(0,0,-2t\sin t -2\cos t)$
+ 
+Interpretation
+ 
+The motion stays in the $xy$-plane. The cross product is perpendicular to it.
+ 
+Task 03 – Integration of Motion
+Problem Statement
+ 
+A) Given velocity  
+$\vec v(t)=(2t,3,-e^{-t})$, with $\vec r(0)=(0,1,2)$.
+ 
+B) Given acceleration  
+$\vec a(t)=(4,-\sin t,0)$, with $\vec v(0)=(1,0,2)$ and $\vec r(0)=(0,0,0)$.
+ 
+Theory
+ 
+Integration of velocity gives position.  
+Integration of acceleration gives velocity.
+ 
+Step-by-Step Solution
 Part A1: Position
  
 Integrate each component:
@@ -446,3 +668,7 @@ Magnitude:
 $$
 |\vec L|=mR^2\omega
 $$
+ 
+Constant.
+ 
+Vector is perpendicular to the plane.
