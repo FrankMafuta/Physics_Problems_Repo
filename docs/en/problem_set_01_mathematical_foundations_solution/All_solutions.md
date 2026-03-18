@@ -1,8 +1,8 @@
-# Problem Set 1 – Mathematical Foundations – Solutions
+# Task1 – Mathematical Foundations – Solutions
 
 ---
 
-## Problem 1 – Vectors and Linear Transformations
+## Task 1 – Vectors and Linear Transformations
 
 **Given:**
 
@@ -87,7 +87,7 @@ $$
 
 ---
 
-## Problem 2 – Parametric Trajectory, Velocity, and Acceleration
+## Task 2 – Parametric Trajectory, Velocity, and Acceleration
 
 **Given:**
 
@@ -137,7 +137,7 @@ $$
 
 ---
 
-## Problem 3 – Integration of Motion
+## Task 3 – Integration of Motion
 
 ### Part A
 
@@ -191,7 +191,7 @@ $$
 
 ---
 
-## Problem 4 – Geometry of Parametric Curves
+## Task 4 – Geometry of Parametric Curves
 
 ### A) Circle: $x(t) = R\cos t,\quad y(t) = R\sin t$
 
@@ -293,7 +293,7 @@ $$
 
 ---
 
-## Problem 5 – Trajectory Curvature and Normal Acceleration
+## Task 5 – Trajectory Curvature and Normal Acceleration
 
 **Given ellipse:**
 
@@ -379,7 +379,7 @@ This is consistent — for a circle of radius $a$, the radius of curvature equal
 
 ---
 
-## Problem 6 – Curve Length and Numerical Integration
+## Task 6 – Curve Length and Numerical Integration
 
 **Given trajectory:**
 
@@ -517,7 +517,7 @@ $$
 
 ---
 
-## Problem 7 – Work of a Force Along a Trajectory
+## Task 7 – Work of a Force Along a Trajectory
 
 **Given:**
 
@@ -592,7 +592,7 @@ $$
 
 ---
 
-## Problem 8 – First-Order Differential Equation
+## Task 8 – First-Order Differential Equation
 
 $$
 \frac{dy}{dt} = -k y
@@ -675,7 +675,7 @@ For $k > 0$: exponential decay. For $k < 0$: exponential growth.
 
 ---
 
-## Problem 9 – Harmonic Oscillator
+## Task 9 – Harmonic Oscillator
 
 $$
 \frac{d^2x}{dt^2} + \omega^2 x = 0
@@ -790,7 +790,7 @@ $$
 
 ---
 
-## Problem 10 – Angular Momentum in Circular Motion
+## Task 10 – Angular Momentum in Circular Motion
 
 **Given:**
 
