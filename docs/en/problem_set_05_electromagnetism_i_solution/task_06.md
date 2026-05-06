@@ -1,6 +1,5 @@
 ## Problem 6 – 2D Field Map
 
-See **`problem6_field_map.html`** for the interactive visualization.
 
 **Theory — field from $N$ charges:**
 
